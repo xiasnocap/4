@@ -1,0 +1,11 @@
+┏━━━━━━━━━━━━━━━━━
+┣━━━━ Group
+┣ {key}Ginfo
+┣ {key}Join
+┣ {key}Leave/Leave 1-3
+┣ {key}Invme [ Num ]
+┣ {key}Grouplist 1-3
+┣ {key}Mention/Tagall
+┣ {key}Memberlist/Pendinglist
+┣ {key}Openqr/Closeqr
+┗━━━━━━━━━━━━━━━━━

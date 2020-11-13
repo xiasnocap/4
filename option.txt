@@ -1,0 +1,11 @@
+┏━━━━━━━━━━━━━━━━━
+┣━━━━ Option
+┣ {key}Creator
+┣ {key}Respon/Ping
+┣ {key}Speed/Debug
+┣ {key}Allowliff
+┣ {key}Me
+┣ {key}Mid/Mid [ Mention ]
+┣ {key}Contact/Contact [ Mention ]
+┣ {key}Contact: [ User ID ]
+┗━━━━━━━━━━━━━━━━━
