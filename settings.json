@@ -1,0 +1,24 @@
+{
+    "addadmin": false,
+    "addban": false,
+    "addbots": false,
+    "addowner": false,
+    "addstaff": false,
+    "autoJoin": true,
+    "changeGroupName": {},
+    "changeGroupPicture": {},
+    "updatePict": {},
+    "deladmin": false,
+    "delban": false,
+    "delbots": false,
+    "delowner": false,
+    "delstaff": false,
+    "restartPoint": null,
+    "setKey": {
+        "key": "",
+        "status": false
+    },
+    "label": "𐀀 HΞLLTΞRHΞΛD ᴄᴏʀᴘ.",
+    "iconUrl": "https://i.ibb.co/wzs7qZ0/hlth-loading-gif.gif",
+    "linkUrl": "line://nv/profilePopup/mid=u386d2ed45175a8d55b0f69db1d23e125"
+}
