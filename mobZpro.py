@@ -1124,7 +1124,7 @@ async def mobanzu(op):
                                     a001.leaveGroup(receiver)
                                 if spl == "2":
                                     a002.leaveGroup(receiver)
-                                if spl == "2":
+                                if spl == "3":
                                     a003.leaveGroup(receiver)
                         elif hlth == "join":
                             if sender in creator or sender in owner or sender in admin:
