@@ -777,7 +777,7 @@ async def mobanzu(op):
                     a002.leaveRoom(op.param1)
                 except:
                     try:
-                        a001.leaveRoom(op.param1)
+                        a003.leaveRoom(op.param1)
                     except:
                         pass
         if op.type == 25 or op.type == 26:
