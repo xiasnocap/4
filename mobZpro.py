@@ -1141,6 +1141,23 @@ async def mobanzu(op):
                                         G = a001.getGroup(receiver)
                                         G.preventedJoinByTicket = True
                                         a001.updateGroup(G)
+                        elif hlth == "invite":
+                            if sender in creator or sender in owner or sender in admin:
+                                try:
+                                    a001.inviteIntoGroup(receiver, [M002D23,M003D23])
+                                    a002.acceptGroupInvitation(receiver)
+                                    a003.acceptGroupInvitation(receiver)
+                                except TalkException as talk_error:
+                                    if talk_error.code == 35:
+                                        G = a001.getGroup(receiver)
+                                        G.preventedJoinByTicket = False
+                                        a001.updateGroup(G)
+                                        links = a001.reissueGroupTicket(receiver)
+                                        a002.acceptGroupInvitationByTicket(receiver,links)
+                                        a003.acceptGroupInvitationByTicket(receiver,links)
+                                        G = a001.getGroup(receiver)
+                                        G.preventedJoinByTicket = True
+                                        a001.updateGroup(G)
                         elif hlth == "blacklist" or hlth == "banlist":
                             if sender in creator or sender in owner or sender in admin or sender in staff:
                                 if len(status["blacklist"]) > 0:
