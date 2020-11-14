@@ -1075,31 +1075,30 @@ async def mobanzu(op):
                                 a003.sendReplyMessage(reply,receiver,debug())
                         elif hlth == "ginfo":
                             if sender in creator or sender in owner or sender in admin or sender in staff:
-                                for getg in army:
-                                    group = getg.getGroup(receiver)
-                                    try:
-                                        gCreator = group.creator.displayName
-                                    except:
-                                        gCreator = "Not Found"
-                                    if group.invitee is None:
-                                        gPending = "0"
-                                    else:
-                                        gPending = str(len(group.invitee))
-                                    if group.preventedJoinByTicket == True:
-                                        gQr = "Clossed"
-                                        gTicket = "Nothing"
-                                    else:
-                                        gQr = "Opened"
-                                        gTicket = "https://line.me/R/ti/g/{}".format(str(a001.reissueGroupTicket(group.id)))
-                                    hlthX = "[ Group Info ]"
-                                    hlthX += "\n- Group Name: {}".format(str(group.name))
-                                    hlthX += "\n- Group ID: {}".format(group.id)
-                                    hlthX += "\n- Creator: {}".format(str(gCreator))
-                                    hlthX += "\n- Member: {}".format(str(len(group.members)))
-                                    hlthX += "\n- Pending: {}".format(gPending)
-                                    hlthX += "\n- Group URL: {}".format(gQr)
-                                    hlthX += "\n- Group Ticket: {}".format(gTicket)
-                                    a001.sendReplyMessage(reply,receiver,hlthX)
+                                group = a001.getGroup(receiver)
+                                try:
+                                    gCreator = group.creator.displayName
+                                except:
+                                    gCreator = "Not Found"
+                                if group.invitee is None:
+                                    gPending = "0"
+                                else:
+                                    gPending = str(len(group.invitee))
+                                if group.preventedJoinByTicket == True:
+                                    gQr = "Clossed"
+                                    gTicket = "Nothing"
+                                else:
+                                    gQr = "Opened"
+                                    gTicket = "https://line.me/R/ti/g/{}".format(str(a001.reissueGroupTicket(group.id)))
+                                hlthX = "[ Group Info ]"
+                                hlthX += "\n- Group Name: {}".format(str(group.name))
+                                hlthX += "\n- Group ID: {}".format(group.id)
+                                hlthX += "\n- Creator: {}".format(str(gCreator))
+                                hlthX += "\n- Member: {}".format(str(len(group.members)))
+                                hlthX += "\n- Pending: {}".format(gPending)
+                                hlthX += "\n- Group URL: {}".format(gQr)
+                                hlthX += "\n- Group Ticket: {}".format(gTicket)
+                                a001.sendReplyMessage(reply,receiver,hlthX)
                         elif hlth == "openqr":
                             if sender in creator or sender in owner or sender in admin:
                                 group = a001.getGroup(receiver)
