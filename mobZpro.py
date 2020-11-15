@@ -245,7 +245,7 @@ def kick(group, target):
         asd = a001.kickoutFromGroup(group, [target])
         if asd != None:
             hlthfail
-        except:
+    except:
         try:
             asd = a002.kickoutFromGroup(group, [target])
             if asd != None:
