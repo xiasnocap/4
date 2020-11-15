@@ -242,30 +242,42 @@ def sendFooter(receiver, text):
 
 def kick(group, target):
     try:
-        a001.kickoutFromGroup(group, [target])
-    except:
+        asd = a001.kickoutFromGroup(group, [target])
+        if asd != None:
+            hlthfail
+        except:
         try:
-            a002.kickoutFromGroup(group, [target])
+            asd = a002.kickoutFromGroup(group, [target])
+            if asd != None:
+                hlthfail
         except:
             pass
 
 def cancel(group, target):
     try:
-        a001.cancelGroupInvitation(group, [target])
+        asd = a001.cancelGroupInvitation(group, [target])
+        if asd != None:
+            hlthfail
     except:
         try:
-            a002.cancelGroupInvitation(group, [target])
+            asd = a002.cancelGroupInvitation(group, [target])
+            if asd != None:
+                hlthfail
         except:
             pass
 
 def invite(group, target):
     try:
         a001.findAndAddContactsByMid(target)
-        a001.inviteIntoGroup(group, [target])
+        asd = a001.inviteIntoGroup(group, [target])
+        if asd != None:
+            hlthfail
     except:
         try:
             a002.findAndAddContactsByMid(target)
-            a002.inviteIntoGroup(group, [target])
+            asd = a002.inviteIntoGroup(group, [target])
+            if asd != None:
+                hlthfail
         except:
             pass
 
@@ -273,12 +285,16 @@ def lockqr(group):
     try:
         G = a001.getGroup(group)
         G.preventedJoinByTicket = True
-        a001.updateGroup(G)
+        asd = a001.updateGroup(G)
+        if asd != None:
+            hlthfail
     except:
         try:
             G = a002.getGroup(group)
             G.preventedJoinByTicket = True
-            a002.updateGroup(G)
+            asd = a002.updateGroup(G)
+            if asd != None:
+                hlthfail
         except:
             pass
 
@@ -315,12 +331,11 @@ def backup(group, target):
 
 def antijs(group, target):
     a003.acceptGroupInvitation(group)
+    a003.kickoutFromGroup(group, [target])
     try:
-        a003.inviteIntoGroup(group, [target])
-        if target == M001D23:
-            a001.acceptGroupInvitation(group)
-        if target == M002D23:
-            a002.acceptGroupInvitation(group)
+        a003.inviteIntoGroup(group, [M001D23,M002D23])
+        a001.acceptGroupInvitation(group)
+        a002.acceptGroupInvitation(group)
     except:
         pass
 
@@ -697,7 +712,7 @@ async def mobanzu(op):
                     try:
                         d23X_46 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
                         d23X_47 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-                        d23X_48 = threading.Thread(target=antijs, args=(op.param1, op.param3)).start()
+                        d23X_48 = threading.Thread(target=antijs, args=(op.param1, op.param2)).start()
                         d23X_49 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
                     except:
                         pass
@@ -709,7 +724,7 @@ async def mobanzu(op):
                     try:
                         d23X_51 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
                         d23X_52 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-                        d23X_53 = threading.Thread(target=antijs, args=(op.param1, op.param3)).start()
+                        d23X_53 = threading.Thread(target=antijs, args=(op.param1, op.param2)).start()
                         d23X_54 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
                     except:
                         pass
