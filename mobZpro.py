@@ -1779,8 +1779,8 @@ async def mobanzu(op):
                                         pass
                                     else:
                                         try:
-                                            d23X_77 = threading.Thread(target=blacklist, args=(target,)).start()
-                                            d23X_78 = threading.Thread(target=kick, args=(receiver, target)).start()
+                                            d23X_71 = threading.Thread(target=blacklist, args=(target,)).start()
+                                            d23X_72 = threading.Thread(target=kick, args=(receiver, target)).start()
                                         except:
                                             pass
                         elif hlth.startswith("invite "):
@@ -1795,7 +1795,7 @@ async def mobanzu(op):
                                             lists.append(mention["M"])
                                     for ls in lists:
                                         try:
-                                            d23X_79 = threading.Thread(target=invite, args=(receiver, ls)).start()
+                                            d23X_73 = threading.Thread(target=invite, args=(receiver, ls)).start()
                                         except:
                                             pass
                         elif hlth.startswith("invme "):
@@ -1805,7 +1805,7 @@ async def mobanzu(op):
                                 gid = a001.getGroupIdsJoined()
                                 group = a001.getGroup(gid[num-1])
                                 try:
-                                    d23X_80 = threading.Thread(target=invite, args=(gid[num-1], sender)).start()
+                                    d23X_74 = threading.Thread(target=invite, args=(gid[num-1], sender)).start()
                                 except:
                                     pass
                                 a001.sendReplyMessage(reply,receiver, "Invited: "+str(group.name))
