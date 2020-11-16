@@ -1,22 +1,25 @@
 # ![Logo](https://i.ibb.co/xqsKzqg/hlth-M-profile.png) HELLTERHEAD Corp.
 _Simple Protect Bot_
 
-[![python3.x](https://img.shields.io/badge/3.6%20%7C%203.7-blue.svg?&logo=python&label=Python)](https://www.python.org/downloads/release/python-372/) [![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT) ![Version](https://img.shields.io/badge/Version-5.3-red.svg) ![Build](https://img.shields.io/badge/Build-Unknown-lightgrey)
+[![python3.x](https://img.shields.io/badge/3.6%20%7C%203.7-blue.svg?&logo=python&label=Python)](https://www.python.org/downloads/release/python-372/)
+[![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
+![Version](https://img.shields.io/badge/Version-5.3-red.svg)
+![Build](https://img.shields.io/badge/Build-Unknown-lightgrey)
 
 ___
 ## Features
--    [x] Including Thread
--    [x] Include Anti JS
--    [x] More Fasted
--    [x] Simple Function
+- [x] Including Thread
+- [x] Include Anti JS
+- [x] More Fasted
+- [x] Simple Function
  
 ## Author
-[Line](line.me/ti/p/~luscious.net) | [Instagram](https://www.instagram.com/mo.banzu/) | [Youtube](https://www.youtube.com/channel/UCPa_W8sqNpQrGCb8IvZflng?view_as=subscriber)
+[LINE](https://line.me/ti/p/~luscious.net) | [Instagram](https://www.instagram.com/mo.banzu/) | [Youtube](https://www.youtube.com/channel/UCPa_W8sqNpQrGCb8IvZflng?view_as=subscriber)
 
 ## Thanks to
 - Fadhiil Rachman / [Linepy](https://github.com/fadhiilrachman/line-py)
 - Kangrework / [sentinel](https://github.com/Kangrework/sentinel)
-- Helloworld
+- Hello World
 - Vanguard Team Bot
 - All My Friend
 - All Support
