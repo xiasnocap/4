@@ -1,8 +1,0 @@
-┏━━━━━━━━━━━━━━━━━
-┣━━━━ Protection
-┣ {key}Kick/Invite [ Mention ]
-┣ {key}Protect [ Max/None ]
-┣ {key}Strictmode [ On/Off ]
-┣ {key}Protectlist
-┣ {key}Checkbot
-┗━━━━━━━━━━━━━━━━━
