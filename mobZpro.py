@@ -1784,10 +1784,10 @@ async def mobanzu(op):
 def run():
     while True:
         try:
-            ops = poll.singleTrace(count=50)
+            ops = oepoll.singleTrace(count=50)
             if ops != None:
                 for op in ops:
-                    mobanzu(op)
+                    loop.run_until_complete(mobanzu(op))
                     oepoll.setRevision(op.revision)
         except Exception as error:
             logError(error)
