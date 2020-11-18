@@ -334,7 +334,7 @@ class Talk(object):
                         wait['whitelist'].remove(nama[i-1])
                         hh = 'Del WL'
                     except:
-                    hh = 'Not WL User'
+                        hh = 'Not WL User'
                 if dd == 'delml':
                     try:
                         wait['target'].remove(nama[i-1])
