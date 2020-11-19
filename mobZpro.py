@@ -1485,7 +1485,7 @@ async def mobanzu(op):
                                 settings["delbots"] = False
                                 settings["delowner"] = False
                                 settings["delstaff"] = False
-                                a001.sendReplyMesage(reply,receiver,"Command Aborted")
+                                a001.sendReplyMessage(reply,receiver,"Command Aborted")
                         elif hlth.startswith("grouplist "):
                             if sender in creator or sender in owner or sender in admin:
                                 spl = hlth.replace("grouplist ","")
