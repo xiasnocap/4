@@ -147,7 +147,6 @@ optCmd ='''┏━━━━━━━━━━━━━━━━━
 ┣ Me/About
 ┣ Mid/Mid [ Mention ]
 ┣ Contact/Contact [ Mention ]
-┣ Contact: [ User ID ]
 ┗━━━━━━━━━━━━━━━━━'''
 
 setCmd = '''┏━━━━━━━━━━━━━━━━━
@@ -1085,11 +1084,6 @@ async def mobanzu(op):
                                     contact = a001.getContact(ls)
                                     cont = contact.mid
                                     a001.sendContact(receiver, cont)
-                        elif hlth.startswith("contact: "):
-                            query = removeCmd("contact:", text)
-                            search = client.findContactsByUserid(query)
-                            line = search.mid
-                            a001.sendContact(receiver, line)
                         elif hlth == "ping":
                             a001.sendMessage(receiver,"PING!!!")
                             a002.sendMessage(receiver,"PING!!!")
