@@ -577,7 +577,7 @@ async def mobanzu(op):
                         try:
                             groupn = a001.getGroup(op.param1).name
                             if groupn not in settings["changeGroupName"][op.param1]:
-                               progn = a001.getGroup(op.param1)
+                                progn = a001.getGroup(op.param1)
                                 progn.name = settings["changeGroupName"][op.param1]
                                 a001.updateGroup(progn)
                                 d23X_14 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
