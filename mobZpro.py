@@ -533,96 +533,96 @@ async def mobanzu(op):
                         d23X_3 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
                     except:
                         pass
-            if op.param2 in status["blacklist"]:
-                if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-                    pass
-                else:
-                    try:
-                        d23X_4 = threading.Thread(target=lockqr, args=(op.param1,)).start()
-                        d23X_5 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-                    except:
+                if op.param2 in status["blacklist"]:
+                    if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
                         pass
-            if op.param3 in status["blacklist"]:
-                if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-                    pass
-                else:
-                    try:
-                        d23X_6 = threading.Thread(target=lockqr, args=(op.param1,)).start()
-                        d23X_7 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-                    except:
-                        pass
-            if op.param3 == '4':
-                if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-                    pass
-                else:
-                    d23X_8 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-                    try:
-                        groupqr = a001.getGroup(op.param1)
-                        if groupqr.preventedJoinByTicket == False:
-                            d23X_9 = threading.Thread(target=lockqr, args=(op.param1,)).start()
-                            d23X_10 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-                    except:
+                    else:
                         try:
-                            groupqr = a002.getGroup(op.param1)
-                            if groupqr.preventedJoinByTicket == False:
-                                d23X_11 = threading.Thread(target=lockqr, args=(op.param1,)).start()
-                                d23X_12 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                            d23X_4 = threading.Thread(target=lockqr, args=(op.param1,)).start()
+                            d23X_5 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
                         except:
                             pass
-            if op.param3 == '1':
-                if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-                    pass
-                else:
-                    d23X_13 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-                    try:
-                        groupn = a001.getGroup(op.param1).name
-                        if groupn not in settings["changeGroupName"][op.param1]:
-                            progn = a001.getGroup(op.param1)
-                            progn.name = settings["changeGroupName"][op.param1]
-                            a001.updateGroup(progn)
-                            d23X_14 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-                        else:
-                            progn = a001.getGroup(op.param1).name
-                            settings["changeGroupName"][op.param1] = progn
-                            with open('settings.json', 'w') as fp:
-                                json.dump(settings, fp, sort_keys=True, indent=4)
-                        groupp = a001.getGroup(op.param1).pictureStatus
-                        if groupp not in settings["changeGroupPicture"][op.param1]:
-                            progp = a001.getGroup(op.param1)
-                            progp.pictureStatus = settings["changeGroupPicture"]
-                            a001.updateGroupPicture(progp)
-                            d23X_15 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-                        else:
-                            progp = a001.getGroup(op.param1).pictureStatus
-                            settings["changeGroupPicture"][op.param1] = progp
-                            with open('settings.json', 'w') as fp:
-                                json.dump(settings, fp, sort_keys=True, indent=4)
-                    except:
+                if op.param3 in status["blacklist"]:
+                    if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+                        pass
+                    else:
                         try:
-                            groupn = a002.getGroup(op.param1).name
+                            d23X_6 = threading.Thread(target=lockqr, args=(op.param1,)).start()
+                            d23X_7 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                        except:
+                            pass
+                if op.param3 == '4':
+                    if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+                        pass
+                    else:
+                        d23X_8 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+                        try:
+                            groupqr = a001.getGroup(op.param1)
+                            if groupqr.preventedJoinByTicket == False:
+                                d23X_9 = threading.Thread(target=lockqr, args=(op.param1,)).start()
+                                d23X_10 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                        except:
+                            try:
+                                groupqr = a002.getGroup(op.param1)
+                                if groupqr.preventedJoinByTicket == False:
+                                    d23X_11 = threading.Thread(target=lockqr, args=(op.param1,)).start()
+                                    d23X_12 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                            except:
+                                pass
+                if op.param3 == '1':
+                    if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+                        pass
+                    else:
+                        d23X_13 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+                        try:
+                            groupn = a001.getGroup(op.param1).name
                             if groupn not in settings["changeGroupName"][op.param1]:
-                                progn = a002.getGroup(op.param1)
+                               progn = a001.getGroup(op.param1)
                                 progn.name = settings["changeGroupName"][op.param1]
-                                a002.updateGroup(progn)
-                                d23X_16 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                                a001.updateGroup(progn)
+                                d23X_14 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
                             else:
-                                progn = a002.getGroup(op.param1).name
+                                progn = a001.getGroup(op.param1).name
                                 settings["changeGroupName"][op.param1] = progn
                                 with open('settings.json', 'w') as fp:
                                     json.dump(settings, fp, sort_keys=True, indent=4)
-                            groupp = a002.getGroup(op.param1).pictureStatus
+                            groupp = a001.getGroup(op.param1).pictureStatus
                             if groupp not in settings["changeGroupPicture"][op.param1]:
-                                progp = a002.getGroup(op.param1)
+                                progp = a001.getGroup(op.param1)
                                 progp.pictureStatus = settings["changeGroupPicture"]
-                                a002.updateGroupPicture(progp)
-                                d23X_17 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                                a001.updateGroupPicture(progp)
+                                d23X_15 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
                             else:
-                                progp = a002.getGroup(op.param1).pictureStatus
+                                progp = a001.getGroup(op.param1).pictureStatus
                                 settings["changeGroupPicture"][op.param1] = progp
                                 with open('settings.json', 'w') as fp:
                                     json.dump(settings, fp, sort_keys=True, indent=4)
                         except:
-                            pass
+                            try:
+                                groupn = a002.getGroup(op.param1).name
+                                if groupn not in settings["changeGroupName"][op.param1]:
+                                    progn = a002.getGroup(op.param1)
+                                    progn.name = settings["changeGroupName"][op.param1]
+                                    a002.updateGroup(progn)
+                                    d23X_16 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                                else:
+                                    progn = a002.getGroup(op.param1).name
+                                    settings["changeGroupName"][op.param1] = progn
+                                    with open('settings.json', 'w') as fp:
+                                        json.dump(settings, fp, sort_keys=True, indent=4)
+                                groupp = a002.getGroup(op.param1).pictureStatus
+                                if groupp not in settings["changeGroupPicture"][op.param1]:
+                                    progp = a002.getGroup(op.param1)
+                                    progp.pictureStatus = settings["changeGroupPicture"]
+                                    a002.updateGroupPicture(progp)
+                                    d23X_17 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                                else:
+                                    progp = a002.getGroup(op.param1).pictureStatus
+                                    settings["changeGroupPicture"][op.param1] = progp
+                                    with open('settings.json', 'w') as fp:
+                                        json.dump(settings, fp, sort_keys=True, indent=4)
+                            except:
+                                pass
         if op.type == 13 or op.type == 124:
             if op.type == 13: print ("[ 13 ] NOTIFIED INVITE INTO GROUP")
             else: print ("[ 124 ] NOTIFIED INVITE INTO CHAT")
@@ -651,52 +651,52 @@ async def mobanzu(op):
                                     d23X_25 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
                             except:
                                 pass
-            if op.param2 in status["blacklist"]:
-                if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-                    pass
-                else:
-                    try:
-                        d23X_26 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
-                        d23X_27 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-                    except:
+                if op.param2 in status["blacklist"]:
+                    if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+                        pass
+                    else:
                         try:
-                            inv1 = op.param3.replace('\x1e',',')
-                            inv2 = inv1.split(',')
-                            for _mid in inv2:
-                                d23X_28 = threading.Thread(target=cancel, args=(op.param1, _mid)).start()
-                                d23X_29 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                            d23X_26 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+                            d23X_27 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
                         except:
                             try:
-                                inv3 = op.param3.replace('\x1e',',')
-                                inv4 = inv3.split(',')
-                                for _mid in inv4:
-                                    d23X_30 = threading.Thread(target=cancel, args=(op.param1, _mid)).start()
-                                    d23X_31 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                                inv1 = op.param3.replace('\x1e',',')
+                                inv2 = inv1.split(',')
+                                for _mid in inv2:
+                                    d23X_28 = threading.Thread(target=cancel, args=(op.param1, _mid)).start()
+                                    d23X_29 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
                             except:
-                                pass
-            if op.param3 in status["blacklist"]:
-                if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-                    pass
-                else:
-                    try:
-                        d23X_32 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
-                        d23X_33 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-                    except:
+                                try:
+                                    inv3 = op.param3.replace('\x1e',',')
+                                    inv4 = inv3.split(',')
+                                    for _mid in inv4:
+                                        d23X_30 = threading.Thread(target=cancel, args=(op.param1, _mid)).start()
+                                        d23X_31 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                                except:
+                                    pass
+                if op.param3 in status["blacklist"]:
+                    if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
+                        pass
+                    else:
                         try:
-                            inv1 = op.param3.replace('\x1e',',')
-                            inv2 = inv1.split(',')
-                            for _mid in inv2:
-                                d23X_34 = threading.Thread(target=cancel, args=(op.param1, _mid)).start()
-                                d23X_35 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                            d23X_32 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+                            d23X_33 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
                         except:
                             try:
-                                inv3 = op.param3.replace('\x1e',',')
-                                inv4 = inv3.split(',')
-                                for _mid in inv4:
-                                    d23X_36 = threading.Thread(target=cancel, args=(op.param1, _mid)).start()
-                                    d23X_37 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                                inv1 = op.param3.replace('\x1e',',')
+                                inv2 = inv1.split(',')
+                                for _mid in inv2:
+                                    d23X_34 = threading.Thread(target=cancel, args=(op.param1, _mid)).start()
+                                    d23X_35 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
                             except:
-                                pass
+                                try:
+                                    inv3 = op.param3.replace('\x1e',',')
+                                    inv4 = inv3.split(',')
+                                    for _mid in inv4:
+                                        d23X_36 = threading.Thread(target=cancel, args=(op.param1, _mid)).start()
+                                        d23X_37 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                                except:
+                                    pass
             if M001D23 in op.param3:
                 if settings["autoJoin"] == True:
                     if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
@@ -746,41 +746,41 @@ async def mobanzu(op):
                         d23X_45 = threading.Thread(target=invite, args=(op.param1, op.param3)).start()
                     except:
                         pass
-            if op.param3 in M001D23:
-                if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-                    pass
-                else:
-                    d23X_46 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-                    try:
-                        d23X_47 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-                        d23X_48 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-                        d23X_49 = threading.Thread(target=antijs, args=(op.param1, op.param2)).start()
-                        d23X_50 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-                    except:
+                if op.param3 in M001D23:
+                    if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
                         pass
-            if op.param3 in M002D23:
-                if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-                    pass
-                else:
-                    d23X_51 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-                    try:
-                        d23X_52 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-                        d23X_53 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-                        d23X_54 = threading.Thread(target=antijs, args=(op.param1, op.param2)).start()
-                        d23X_55 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-                    except:
+                    else:
+                        d23X_46 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+                        try:
+                            d23X_47 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                            d23X_48 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+                            d23X_49 = threading.Thread(target=antijs, args=(op.param1, op.param2)).start()
+                            d23X_50 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                        except:
+                            pass
+                if op.param3 in M002D23:
+                    if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
                         pass
-            if op.param3 in M003D23:
-                if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-                    pass
-                else:
-                    d23X_56 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-                    try:
-                        d23X_57 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-                        d23X_58 = threading.Thread(target=invite, args=(op.param1, op.param3)).start()
-                        d23X_59 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-                    except:
+                    else:
+                        d23X_51 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+                        try:
+                            d23X_52 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                            d23X_53 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+                            d23X_54 = threading.Thread(target=antijs, args=(op.param1, op.param2)).start()
+                            d23X_55 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                        except:
+                            pass
+                if op.param3 in M003D23:
+                    if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
                         pass
+                    else:
+                        d23X_56 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+                        try:
+                            d23X_57 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                            d23X_58 = threading.Thread(target=invite, args=(op.param1, op.param3)).start()
+                            d23X_59 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                        except:
+                            pass
         if op.type == 32 or op.type == 126:
             if op.type == 32: print ("[ 32 ] NOTIFIED CANCEL INVITATION GROUP")
             else: print ("[ 126 ] NOTIFIED CANCEL CHAT INVITATION")
@@ -794,36 +794,36 @@ async def mobanzu(op):
                         d23X_62 = threading.Thread(target=invite, args=(op.param1, op.param3)).start()
                     except:
                         pass
-            if op.param3 == M001D23:
-                if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-                    pass
-                else:
-                    d23X_63 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-                    try:
-                        d23X_64 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-                        d23X_65 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-                    except:
+                if op.param3 == M001D23:
+                    if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
                         pass
-            if op.param3 == M002D23:
-                if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-                    pass
-                else:
-                    d23X_66 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-                    try:
-                        d23X_67 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-                        d23X_68 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
-                    except:
+                    else:
+                        d23X_63 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+                        try:
+                            d23X_64 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                            d23X_65 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+                        except:
+                            pass
+                if op.param3 == M002D23:
+                    if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
                         pass
-            if op.param3 == M003D23:
-                if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
-                    pass
-                else:
-                    d23X_69 = threading.Thread(target=blacklist, args=(op.param2,)).start()
-                    try:
-                        d23X_70 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-                        d23X_71 = threading.Thread(target=invite, args=(op.param1, op.param3)).start()
-                    except:
+                    else:
+                        d23X_66 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+                        try:
+                            d23X_67 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                            d23X_68 = threading.Thread(target=backup, args=(op.param1, op.param3)).start()
+                        except:
+                            pass
+                if op.param3 == M003D23:
+                    if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
                         pass
+                    else:
+                        d23X_69 = threading.Thread(target=blacklist, args=(op.param2,)).start()
+                        try:
+                            d23X_70 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                            d23X_71 = threading.Thread(target=invite, args=(op.param1, op.param3)).start()
+                        except:
+                            pass
         if op.type == 22 or op.type == 24:
             if op.type == 22: print ("[ 22 ] NOTIFIED INVITE INTO ROOM")
             else: print ("[ 24 ] NOTIFIED LEAVE ROOM")
