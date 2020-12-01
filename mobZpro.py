@@ -105,6 +105,7 @@ proCmd = '''┏━━━━━━━━━━━━━━━━━
 ┣ Strictmode [ On/Off ]
 ┣ Protectlist
 ┣ Checkbot
+┣ Purge
 ┗━━━━━━━━━━━━━━━━━'''
 
 groupCmd = '''┏━━━━━━━━━━━━━━━━━
@@ -1589,6 +1590,21 @@ async def mobanzu(op):
                                     end = '\n'
                                     mb += '┣ ' + str(b) + ". " +a001.getGroup(ls).name + "\n"
                                 a001.sendReplyMessage(reply, receiver, "┏━ 𐀀 HΞLLTΞRHΞΛD ᴄᴏʀᴘ.\n┣━━━━ List Protect\n┣━━━━ Protect Max\n"+ma+"┣━━━━ Strict Mode\n"+mb+"┗━ Total [ %s ] Protection" %(str(len(promax)+len(strictmode))))
+                        elif hlth == "purge":
+                            if sender in creator or sender in owner:
+                                group = a001.getGroup(receiver)
+                                gMembMids = [contact.mid for contact in group.members]
+                                match = []
+                                for target in status["blacklist"]:
+                                    match+=filter(lambda str: str == target, gMembMids)
+                                if match == []:
+                                    a001.sendReplyMessage(reply,receiver,"Nothing")
+                                    return
+                                for fck in match:
+                                    try:
+                                        fckX = threading.Thread(target=kick, args=(receiver, fck)).start()
+                                    except:
+                                        pass
                         elif hlth.startswith("protect "):
                             if sender in creator or sender in owner or sender in admin:
                                 spl = hlth.replace("protect ","")
