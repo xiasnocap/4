@@ -523,6 +523,13 @@ async def mobanzu(op):
         if op.type == 11 or op.type == 122:
             if op.type == 11: print ("[ 11 ] NOTIFIED UPDATE GROUP")
             else: print ("[ 122 ] NOTIFIED UPDATE CHAT")
+            if settings["autoPurge"] == True:
+                if op.param2 in status["blacklist"]:
+                    try:
+                        fck1 = threading.Thread(target=lockqr, args=(op.param1,)).start()
+                        fck2 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                    except:
+                        pass
             if op.param1 in status["promax"]:
                 if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
                     pass
@@ -626,6 +633,13 @@ async def mobanzu(op):
         if op.type == 13 or op.type == 124:
             if op.type == 13: print ("[ 13 ] NOTIFIED INVITE INTO GROUP")
             else: print ("[ 124 ] NOTIFIED INVITE INTO CHAT")
+            if settings["autoPurge"] == True:
+                if op.param2 in status["blacklist"]:
+                    try:
+                        fck3 = threading.Thread(target=cancel, args=(op.param1, op.param3)).start()
+                        fck4 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                    except:
+                        pass
             if op.param1 in status["promax"]:
                 if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
                     pass
@@ -724,6 +738,12 @@ async def mobanzu(op):
         if op.type == 17 or op.type == 130:
             if op.type == 17: print ("[ 17 ] NOTIFIED ACCEPT GROUP INVITATION")
             else: print ("[ 130 ] NOTIFIED ACCEPT CHAT INVITATION")
+            if settings["autoPurge"] == True:
+                if op.param2 in status["blacklist"]:
+                    try:
+                        fck5 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                    except:
+                        pass
             if op.param1 in status["promax"]:
                 if op.param2 in status["blacklist"]:
                     if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
@@ -736,6 +756,12 @@ async def mobanzu(op):
         if op.type == 19 or op.type == 133:
             if op.type == 19: print ("[ 19 ] NOTIFIED KICKOUT FROM GROUP")
             else: print ("[ 133 ] NOTIFIED DELETE OTHER FROM CHAT")
+            if settings["autoPurge"] == True:
+                if op.param2 in status["blacklist"]:
+                    try:
+                        fck6 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                    except:
+                        pass
             if op.param1 in status["promax"]:
                 if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
                     pass
@@ -784,6 +810,12 @@ async def mobanzu(op):
         if op.type == 32 or op.type == 126:
             if op.type == 32: print ("[ 32 ] NOTIFIED CANCEL INVITATION GROUP")
             else: print ("[ 126 ] NOTIFIED CANCEL CHAT INVITATION")
+            if settings["autoPurge"] == True:
+                if op.param2 in status["blacklist"]:
+                    try:
+                        fck7 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                    except:
+                        pass
             if op.param1 in status["promax"]:
                 if op.param2 in creator or op.param2 in owner or op.param2 in admin or op.param2 in staff or op.param2 in Bots or op.param2 in mybots:
                     pass
