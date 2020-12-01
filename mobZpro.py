@@ -420,6 +420,8 @@ def antijs(group, target):
         a003.inviteIntoGroup(group, [M001D23,M002D23])
         a001.acceptGroupInvitation(group)
         a002.acceptGroupInvitation(group)
+        time.sleep(3)
+        a003.leaveGroup(group)
     except:
         pass
 
@@ -1859,6 +1861,12 @@ async def mobanzu(op):
         if op.type == 15 or op.type == 128:
             if op.type == 15: print ("[ 15 ] NOTIFIED LEAVE GROUP")
             else: print ("[ 128 ] NOTIFIED DELETE SELF FROM CHAT")
+            if op.param1 in status["strictmode"]:
+                if op.param2 == M003D23:
+                    try:
+                        yeah = threading.Thread(target=invite, args=(op.param1, op.param2)).start()
+                    except:
+                        pass
         if op.type == 55:
             print ("[ 55 ] NOTIFIED READ MESSAGE")
         if op.type == 65:
