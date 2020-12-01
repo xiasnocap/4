@@ -5,6 +5,7 @@
     "addowner": false,
     "addstaff": false,
     "autoJoin": true,
+    "autoPurge": true,
     "changeGroupName": {},
     "changeGroupPicture": {},
     "updatePict": {},
