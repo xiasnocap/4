@@ -147,7 +147,7 @@ optCmd ='''┏━━━━━━━━━━━━━━━━━
 ┣ Speed/Debug
 ┣ Me/About
 ┣ Mid/Mid [ Mention ]
-┣ Contact/Contact [ Mention ]
+┣ Contact [ Mention ]
 ┗━━━━━━━━━━━━━━━━━'''
 
 setCmd = '''┏━━━━━━━━━━━━━━━━━
@@ -1060,7 +1060,6 @@ async def mobanzu(op):
                         elif hlth == "mention" or hlth == "tagall":
                             group = a001.getGroup(receiver)
                             memb = [contact.mid for contact in group.members]
-                            memb.remove(a001.getProfile().mid)
                             a001.datamention(receiver,"{}".format(group.name),memb)
                         elif hlth == "reboot":
                             if sender in creator or sender in owner:
@@ -1100,10 +1099,6 @@ async def mobanzu(op):
                                 for ls in lists:
                                     mcont += "{}".format(str(ls))
                                 a001.sendReplyMessage(reply,receiver,str(mcont))
-                        elif hlth == "contact":
-                            contact = a001.getContact(sender)
-                            cont = contact.mid
-                            a001.sendContact(receiver, cont)
                         elif hlth.startswith("contact "):
                             if 'MENTION' in msg.contentMetadata.keys()!= None:
                                 names = re.findall(r'@(\w+)', text)
