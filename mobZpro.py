@@ -859,6 +859,23 @@ async def mobanzu(op):
                             d23X_71 = threading.Thread(target=invite, args=(op.param1, op.param3)).start()
                         except:
                             pass
+        if op.type == 55:
+        print ("[ 55 ] NOTIFIED READ MESSAGE")
+            if settings["autoPurge"] == True:
+                if op.param2 in status["blacklist"]:
+                    try:
+                        fck8 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                    except:
+                        pass
+        if op.type == 25 or op.type == 26:
+#            if op.type == 25: print ("[ 25 ] SEND MESSAGE")
+#            else: print ("[ 26 ] RECEIVE MESSAGE")
+            if settings["autoPurge"] == True:
+                if op.param2 in status["blacklist"]:
+                    try:
+                        fck9 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                    except:
+                        pass
         if op.type == 22 or op.type == 24:
             if op.type == 22: print ("[ 22 ] NOTIFIED INVITE INTO ROOM")
             else: print ("[ 24 ] NOTIFIED LEAVE ROOM")
@@ -1648,7 +1665,6 @@ async def mobanzu(op):
                                             except:
                                                 try:
                                                     a003.leaveGroup(receiver)
-                                                    a001.inviteIntoGroup(receiver,[M003D23])
                                                 except:
                                                     pass
                                 if spl == "off":
@@ -1656,12 +1672,9 @@ async def mobanzu(op):
                                         status["strictmode"].remove(receiver)
                                         a001.sendReplyMessage(reply,receiver,"[ Strict Mode ]\nAccess Granted - Strict Mode Disable")
                                         try:
-                                            a003.leaveGroup(receiver)
+                                            a003.acceptGroupInvitation(receiver)
                                         except:
-                                            try:
-                                                a003.acceptGroupInvitation(receiver)
-                                            except:
-                                                pass
+                                            pass
                                     else:
                                         a001.sendReplyMessage(reply,receiver,"[ Strict Mode ]\nNot Active")
                         elif hlth.startswith("checkbot"):
@@ -1867,10 +1880,6 @@ async def mobanzu(op):
                         yeah = threading.Thread(target=invite, args=(op.param1, op.param2)).start()
                     except:
                         pass
-        if op.type == 55:
-            print ("[ 55 ] NOTIFIED READ MESSAGE")
-        if op.type == 65:
-            print("[ 65 ] NOTIFIED DESTROY MESSAGE")
         backupData()
     except Exception as error:
         logError(error)
