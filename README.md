@@ -10,6 +10,7 @@ ___
 ## Features
 - [x] Including Thread
 - [x] Include Anti JS
+- [x] Type Assist
 - [x] More Fasted
 - [x] Simple Function
  
