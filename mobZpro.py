@@ -861,12 +861,12 @@ async def mobanzu(op):
                             pass
         if op.type == 55:
             print ("[ 55 ] NOTIFIED READ MESSAGE")
-                if settings["autoPurge"] == True:
-                    if op.param2 in status["blacklist"]:
-                        try:
-                            fck8 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
-                        except:
-                            pass
+            if settings["autoPurge"] == True:
+                if op.param2 in status["blacklist"]:
+                    try:
+                        fck8 = threading.Thread(target=kick, args=(op.param1, op.param2)).start()
+                    except:
+                        pass
         if op.type == 25 or op.type == 26:
 #            if op.type == 25: print ("[ 25 ] SEND MESSAGE")
 #            else: print ("[ 26 ] RECEIVE MESSAGE")
