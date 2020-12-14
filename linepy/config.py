@@ -30,28 +30,28 @@ class Config(object):
     }
 
     APP_VERSION = {
-        'IOS': '10.14.0',
-        'IOSIPAD': '10.14.0',
-        'ANDROID': '10.15.1',
-        'ANDROIDLITE': '2.15.0',
-        'DESKTOPWIN': '6.2.2',
-        'DESKTOPMAC': '6.2.2',
-        'CHROMEOS': '2.3.9',
-        'DEFAULT': '10.15.1'
+        'IOS': '10.1.1',
+        'IOSIPAD': '10.5.2',
+        'ANDROID': '10.1.1',
+        'ANDROIDLITE': '2.14.0',
+        'DESKTOPWIN': '6.0.3',
+        'DESKTOPMAC': '6.0.3',
+        'CHROMEOS': '2.3.8',
+        'DEFAULT': '6.0.3'
     }
 
     SYSTEM_VERSION = {
-        'IOS': '13.7',
-        'IOSIPAD': '13.7',
-        'ANDROID': '10.0',
-        'ANDROIDLITE': '10.0',
-        'DESKTOPWIN': '10.0',
-        'DESKTOPMAC': '10.15.6',
-        'CHROMEOS': '85.0',
-        'DEFAULT': '10.0'
+        'IOS': '14.2',
+        'IOSIPAD': '11.2.5',
+        'ANDROID': '14.2',
+        'ANDROIDLITE': '5.1.1',
+        'DESKTOPWIN': '10',
+        'DESKTOPMAC': '10.15',
+        'CHROMEOS': '1',
+        'DEFAULT': '10.15'
     }
 
-    APP_TYPE    = 'DESKTOPMAC'
+    APP_TYPE    = 'DESKTOPWIN'
     APP_VER     = APP_VERSION[APP_TYPE] if APP_TYPE in APP_VERSION else APP_VERSION['DEFAULT']
     CARRIER     = '51089, 1-0'
     SYSTEM_NAME = 'HELLTERHEAD'
