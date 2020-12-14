@@ -720,7 +720,7 @@ async def mobanzu(op):
                         try:
                             d23X_38 = threading.Thread(target=join, args=(op.param1,)).start()
                         except:
-                        	pass
+                            pass
                     else:
                         try:
                             d23X_39 = threading.Thread(target=reject, args=(op.param1,)).start()
@@ -732,7 +732,7 @@ async def mobanzu(op):
                         try:
                             d23X_40 = threading.Thread(target=join, args=(op.param1,)).start()
                         except:
-                        	pass
+                            pass
                     else:
                         try:
                             d23X_41 = threading.Thread(target=reject, args=(op.param1,)).start()
@@ -1877,7 +1877,7 @@ async def mobanzu(op):
             if op.param1 in status["strictmode"]:
                 if op.param2 == M003D23:
                     try:
-                        yeah = threading.Thread(target=invite, args=(op.param1, op.param2)).start()
+                        strict = threading.Thread(target=invite, args=(op.param1, op.param2)).start()
                     except:
                         pass
         backupData()
