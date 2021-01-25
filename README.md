@@ -20,7 +20,7 @@ ___
 ## Thanks to
 - Fadhiil Rachman / [Linepy](https://github.com/fadhiilrachman/line-py)
 - Kangrework / [sentinel](https://github.com/Kangrework/sentinel)
-- Hello World
+- HelloWorld
 - Vanguard Team Bot
 - All My Friend
 - All Support
