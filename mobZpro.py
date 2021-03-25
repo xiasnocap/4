@@ -44,9 +44,9 @@ programStart = time.time()
 
 a001 = LINE('robertghanim582@icloud.com','36091vwz')
 print('》》》》UNIT 001 READY《《《《')
-a002 = LINE('EMAIL','PASSWORD')
+a002 = LINE('robertghanim582@icloud.com','36091vwz')
 print('》》》》UNIT 002 READY《《《《')
-a003 = LINE('EMAIL','PASSWORD')
+a003 = LINE('robertghanim582@icloud.com','36091vwz')
 print('》》》》UNIT 003 READY《《《《\n')
 
 a001.log("[ M001D23 ]\n" + str(a001.authToken))
