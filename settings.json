@@ -5,7 +5,7 @@
     "addowner": false,
     "addstaff": false,
     "autoJoin": true,
-    "autoPurge": true,
+    "autoPurge": false,
     "changeGroupName": {},
     "changeGroupPicture": {},
     "updatePict": {},
@@ -19,7 +19,7 @@
         "key": "",
         "status": false
     },
-    "label": "𐀀 HΞLLTΞRHΞΛD ᴄᴏʀᴘ.",
-    "iconUrl": "https://i.ibb.co/wzs7qZ0/hlth-loading-gif.gif",
-    "linkUrl": "line://nv/profilePopup/mid=u386d2ed45175a8d55b0f69db1d23e125"
+    "label": "┣━[xɪᴀs sᴇʟғʙᴏᴛ]━┫",
+    "iconUrl": "",
+    "linkUrl": "line://nv/profilePopup/mid=u2abfa1f5eca5d588f3dd76cbb72a24d7"
 }
