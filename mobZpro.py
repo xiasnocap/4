@@ -306,7 +306,6 @@ def allowLiff():
         'Content-Type': 'application/json'
     }
     requests.post(url, json=data, headers=headers)
-    }
     sendTemplate(receiver, data)
 
 # 𐀀 HΞLLTΞRHΞΛD ᴄᴏʀᴘ. _______________________________________________________
