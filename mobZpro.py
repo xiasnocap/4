@@ -305,18 +305,6 @@ def allowLiff():
         'Content-Type': 'application/json'
     }
     requests.post(url, json=data, headers=headers)
-
-def sendFooter(receiver, text):
-    label = settings["label"]
-    icon = settings["iconUrl"]
-    link = settings["linkUrl"]
-    data = {
-        "type": "text",
-        "text": text,
-        "sentBy": {
-            "label": "{}".format(label),
-            "iconUrl": "{}".format(icon),
-            "linkUrl": "{}".format(link)
         }
     }
     sendTemplate(receiver, data)
@@ -1052,22 +1040,22 @@ async def mobanzu(op):
                     for hlth in hellterhead.split(' & '):
                         if hlth == "help":
                             if sender in creator or sender in owner or sender in admin or sender in staff:
-                                sendFooter(receiver,str(helpCmd))
+                                
                         elif hlth == "protection":
                             if sender in creator or sender in owner or sender in admin or sender in staff:
-                                sendFooter(receiver,str(proCmd))
+                             
                         elif hlth == "group":
                             if sender in creator or sender in owner or sender in admin or sender in staff:
-                                sendFooter(receiver,str(groupCmd))
+                              
                         elif hlth == "access":
                             if sender in creator or sender in owner or sender in admin or sender in staff:
-                                sendFooter(receiver,str(accessCmd))
+                            
                         elif hlth == "option":
                             if sender in creator or sender in owner or sender in admin or sender in staff:
-                                sendFooter(receiver,str(optCmd))
+                               
                         elif hlth == "settings":
                             if sender in creator or sender in owner or sender in admin or sender in staff:
-                                sendFooter(receiver,str(setCmd))
+                                
                         elif hlth.startswith("allowliff"):
                             if sender in creator or sender in owner or sender in admin or sender in staff:
                                 try:
@@ -1095,9 +1083,9 @@ async def mobanzu(op):
                                 for z in Botslist:
                                     z.sendReplyMessage(reply,receiver,"[ All Chat Cleared ]")
                         elif hlth == "creator":
-                            sendFooter(receiver,str(dreX53))
+                            
                         elif hlth == "about":
-                            sendFooter(receiver,str(aboutCmd))
+                           
                         elif hlth == "me":
                             contact = a001.getContact(sender)
                             a001.sendContact(receiver, contact.mid)
