@@ -86,77 +86,70 @@ resp3 = a003.getProfile().displayName
 
 # 𐀀 HΞLLTΞRHΞΛD ᴄᴏʀᴘ. _______________________________________________________
 
-helpCmd = '''
-┣━━━━ Help
-┣ Protection
-┣ Group
-┣ Access
-┣ Option
-┣ Settings
-┣ Reboot/Shutdown
-┣━━[xɪᴀs sᴇʟғʙᴏᴛ]━━┫'''
+helpCmd = '''┣━━━[ Hᴇʟᴘ ]━━┫ 
+┣ Protection 
+┣ Group 
+┣ Access 
+┣ Option 
+┣ Settings 
+┣ Reboot/Shutdown 
+┣━[xɪᴀs sᴇʟғʙᴏᴛ]━┫'''
 
-proCmd = '''
-┣━━━━ Protection
-┣ Kick 
-┣ Protect [max/off]
-┣ Strictmode [on/off]
-┣ Protectlist
-┣ Checkbot
-┣ Purge
-┣━━[xɪᴀs sᴇʟғʙᴏᴛ]━━┫'''
+proCmd = '''┣━━━[Pʀᴏᴛᴇᴄᴛɪᴏɴ]━━┫
+┣ Kɪᴄᴋ/Iɴᴠɪᴛᴇ [Mᴇɴᴛɪᴏɴ]
+┣ Pʀᴏᴛᴇᴄᴛ [Mᴀx/Nᴏɴᴇ]
+┣ Sᴛʀɪᴄᴛᴍᴏᴅᴇ [Oɴ/Oғғ]
+┣ Pʀᴏᴛᴇᴄᴛʟɪsᴛ 
+┣ Cʜᴇᴄᴋʙᴏᴛ 
+┣ Pᴜʀɢᴇ
+┣━[xɪᴀs sᴇʟғʙᴏᴛ]━┫'''
 
-groupCmd = '''
-┣━━━━ Group
-┣ Ginfo
-┣ Join
-┣ Leave/Leave 1-3
-┣ Invto [ Num ]
-┣ Grouplist 1-3
-┣ Mention/Tagall
-┣ Memberlist/Pendinglist
-┣ Openqr/Closeqr
-┣━━[xɪᴀs sᴇʟғʙᴏᴛ]━━┫'''
+groupCmd = '''┣━━━[Gʀᴏᴜᴘ]━━┫ ┣ Gɪɴғᴏ 
+┣ Jᴏɪɴ
+┣ Lᴇᴀᴠᴇ 1-3 
+┣ Iɴᴠᴛᴏ [Nᴜᴍ]
+┣ Gʀᴏᴜᴘʟɪsᴛ 1-3 
+┣ Mᴇɴᴛɪᴏɴ/Tᴀɢᴀʟʟ 
+┣ Mᴇᴍʙᴇʀʟɪsᴛ/Pᴇɴᴅɪɴɢʟɪsᴛ 
+┣ Oᴘᴇɴϙʀ/Cʟᴏsᴇϙʀ
+┣━[xɪᴀs sᴇʟғʙᴏᴛ]━┫'''
 
-accessCmd = '''
-┣━━━━ Access
-┣ Blacklist/Banlist
-┣ Clearban
-┣ Squad List
-┣ View Bots
-┣ Add/Del Owner [Mention]
-┣ Add/Del Admin [Mention]
-┣ Add/Del Staff [Mention]
-┣ Add/Del Squad [Mention]
-┣ Add/Del Ban [Mention]
-┣ Owner:Add/Del
-┣ Admin:Add/Del
-┣ Staff:Add/Del
-┣ Squad:Add/Del
-┣ Ban:Add/Del
-┣━━[xɪᴀs sᴇʟғʙᴏᴛ]━━┫'''
+accessCmd = '''┣━━[Aᴄᴄᴇss]━━┫
+┣ Bᴀɴʟɪsᴛ 
+┣ Cʟᴇᴀʀʙᴀɴ 
+┣ Sϙᴜᴀᴅ Lɪsᴛ 
+┣ Vɪᴇᴡ Bᴏᴛs 
+┣ Aᴅᴅ/Dᴇʟ Oᴡɴᴇʀ [Mᴇɴᴛɪᴏɴ] 
+┣ Aᴅᴅ/Dᴇʟ Aᴅᴍɪɴ [Mᴇɴᴛɪᴏɴ] 
+┣ Aᴅᴅ/Dᴇʟ Sᴛᴀғғ [Mᴇɴᴛɪᴏɴ]
+┣ Aᴅᴅ/Dᴇʟ Sϙᴜᴀᴅ [Mᴇɴᴛɪᴏɴ] 
+┣ Aᴅᴅ/Dᴇʟ Bᴀɴ [Mᴇɴᴛɪᴏɴ] 
+┣ Oᴡɴᴇʀ Aᴅᴅ/Dᴇʟ 
+┣ Aᴅᴍɪɴ Aᴅᴅ/Dᴇʟ 
+┣ Sᴛᴀғғ Aᴅᴅ/Dᴇʟ 
+┣ Sϙᴜᴀᴅ Aᴅᴅ/Dᴇʟ 
+┣ Bᴀɴ Aᴅᴅ/Dᴇʟ 
+┣━[xɪᴀs sᴇʟғʙᴏᴛ]━┫'''
 
-optCmd ='''
-┣━━━━ Option
-┣ Allowliff
-┣ Creator
-┣ Ping
-┣ Speed
-┣ Me
-┣ About
-┣ Mid [Mention]
-┣ Contact [Mention]
-┣━━[xɪᴀs sᴇʟғʙᴏᴛ]━━┫'''
+optCmd ='''┣━━[Oᴘᴛɪᴏɴ]━━┫ 
+┣ Aʟʟᴏᴡʟɪғғ 
+┣ Pɪɴɢ 
+┣ Sᴘᴇᴇᴅ/Dᴇʙᴜɢ 
+┣ Mᴇ 
+┣ Aʙᴏᴜᴛ 
+┣ Mɪᴅ
+┣ Mɪᴅ [Mᴇɴᴛɪᴏɴ] 
+┣ Cᴏɴᴛᴀᴄᴛ [Mᴇɴᴛɪᴏɴ] 
+┣━[xɪᴀs sᴇʟғʙᴏᴛ]━┫'''
 
-setCmd = '''
-┣━━━━ Settings
-┣ Changepict:1-3/All
-┣ Changebio:1-3/All [ Bio ]
-┣ Changename:1-3/All [ Name ]
-┣━━[xɪᴀs sᴇʟғʙᴏᴛ]━━┫'''
+setCmd = '''┣━━[Sᴇᴛᴛɪɴɢ]━━┫
+┣ Cʜᴀɴɢᴇᴘɪᴄᴛ﹕1-3/Aʟʟ 
+┣ Cʜᴀɴɢᴇʙɪᴏ﹕1-3/Aʟʟ [Bɪᴏ] 
+┣ Cʜᴀɴɢᴇɴᴀᴍᴇ﹕1-3/Aʟʟ [Nᴀᴍᴇ] 
+┣━[xɪᴀs sᴇʟғʙᴏᴛ]━┫'''
 
 aboutCmd ='''
-┣━━━━ About
+┣━━━━[About]━━━━┫
 ┣ Selfbot 
 ┣ v5.4.4
 ┣ Python
@@ -181,7 +174,7 @@ for hlth in Botslist:
 
 def backupData():
     try:
-        backup = settings
+        backup = settingsd
         f = codecs.open('settings.json','w','utf-8')
         json.dump(backup, f, sort_keys=True, indent=4, ensure_ascii=False)
         return True
