@@ -94,8 +94,8 @@ helpCmd = '''
 ┣ Option
 ┣ Settings
 ┣ Reboot/Shutdown
-┣━━━━ [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]
-'''
+┣━━━━ ©2020 ᴍᴏ-ʙᴀɴᴢᴜ
+┣ 𐀀 [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]'''
 
 proCmd = '''
 ┣━━━━ Protection
@@ -105,8 +105,7 @@ proCmd = '''
 ┣ Protectlist
 ┣ Checkbot
 ┣ Purge
-┣━━━━ [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]
-'''
+┣ 𐀀 [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]'''
 
 groupCmd = '''
 ┣━━━━ Group
@@ -118,7 +117,7 @@ groupCmd = '''
 ┣ Mention/Tagall
 ┣ Memberlist/Pendinglist
 ┣ Openqr/Closeqr
-┣━━━━ [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]'''
+┣ 𐀀 [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]'''
 
 accessCmd = '''
 ┣━━━━ Access
@@ -137,7 +136,7 @@ accessCmd = '''
 ┣ Staff:Recruit/Expel
 ┣ Squad:Add/Del
 ┣ Ban:Add/Del
-┣━━━━ [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]'''
+┣ 𐀀 [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]'''
 
 optCmd ='''
 ┣━━━━ Option
@@ -148,14 +147,14 @@ optCmd ='''
 ┣ Me/About
 ┣ Mid/Mid [ Mention ]
 ┣ Contact [ Mention ]
-┣━━━━ [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]'''
+┣ 𐀀 [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]'''
 
 setCmd = '''
 ┣━━━━ Settings
 ┣ Changepict:1-3/All
 ┣ Changebio:1-3/All [ Bio ]
 ┣ Changename:1-3/All [ Name ]
-┣━━━━ [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]'''
+┣ 𐀀 [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]'''
 
 aboutCmd ='''┏━━━━━━━━━━━┓ ▕   [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]
 ┃▏╰━╮┏┈┓╭━╯▕┃ ▕  Protect Bot
@@ -306,6 +305,20 @@ def allowLiff():
         'Content-Type': 'application/json'
     }
     requests.post(url, json=data, headers=headers)
+
+def sendFooter(receiver, text):
+    label = settings["label"]
+    icon = settings["iconUrl"]
+    link = settings["linkUrl"]
+    data = {
+        "type": "text",
+        "text": text,
+        "sentBy": {
+            "label": "{}".format(label),
+            "iconUrl": "{}".format(icon),
+            "linkUrl": "{}".format(link)
+        }
+    }
     sendTemplate(receiver, data)
 
 # 𐀀 HΞLLTΞRHΞΛD ᴄᴏʀᴘ. _______________________________________________________
@@ -1039,22 +1052,22 @@ async def mobanzu(op):
                     for hlth in hellterhead.split(' & '):
                         if hlth == "help":
                             if sender in creator or sender in owner or sender in admin or sender in staff:
-                                
+                                sendFooter(receiver,str(helpCmd))
                         elif hlth == "protection":
                             if sender in creator or sender in owner or sender in admin or sender in staff:
-                             
+                                sendFooter(receiver,str(proCmd))
                         elif hlth == "group":
                             if sender in creator or sender in owner or sender in admin or sender in staff:
-                              
+                                sendFooter(receiver,str(groupCmd))
                         elif hlth == "access":
                             if sender in creator or sender in owner or sender in admin or sender in staff:
-                            
+                                sendFooter(receiver,str(accessCmd))
                         elif hlth == "option":
                             if sender in creator or sender in owner or sender in admin or sender in staff:
-                               
+                                sendFooter(receiver,str(optCmd))
                         elif hlth == "settings":
                             if sender in creator or sender in owner or sender in admin or sender in staff:
-                                
+                                sendFooter(receiver,str(setCmd))
                         elif hlth.startswith("allowliff"):
                             if sender in creator or sender in owner or sender in admin or sender in staff:
                                 try:
@@ -1082,9 +1095,9 @@ async def mobanzu(op):
                                 for z in Botslist:
                                     z.sendReplyMessage(reply,receiver,"[ All Chat Cleared ]")
                         elif hlth == "creator":
-                            
+                            sendFooter(receiver,str(dreX53))
                         elif hlth == "about":
-                           
+                            sendFooter(receiver,str(aboutCmd))
                         elif hlth == "me":
                             contact = a001.getContact(sender)
                             a001.sendContact(receiver, contact.mid)
@@ -1118,9 +1131,9 @@ async def mobanzu(op):
                                     cont = contact.mid
                                     a001.sendContact(receiver, cont)
                         elif hlth == "ping":
-                            a001.sendMessage(receiver,"PING!!!")
-                            a002.sendMessage(receiver,"PING!!!")
-                            a003.sendMessage(receiver,"PING!!!")
+                            a001.sendMessage(receiver,"1")
+                            a002.sendMessage(receiver,"2")
+                            a003.sendMessage(receiver,"3")
                         elif hlth == "respon":
                             if sender in creator or sender in owner or sender in admin or sender in staff:
                                 a001.sendReplyMessage(reply,receiver,"[ {} ]".format(resp1))
