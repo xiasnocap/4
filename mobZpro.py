@@ -87,25 +87,24 @@ resp3 = a003.getProfile().displayName
 # 𐀀 HΞLLTΞRHΞΛD ᴄᴏʀᴘ. _______________________________________________________
 
 helpCmd = '''
-┣━━━━ 𐀀
+┣━━━━ Help
 ┣ Protection
 ┣ Group
 ┣ Access
 ┣ Option
 ┣ Settings
 ┣ Reboot/Shutdown
-┣━━━━ ©2020 ᴍᴏ-ʙᴀɴᴢᴜ
-┣ 𐀀 [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]'''
+┣━━[xɪᴀs sᴇʟғʙᴏᴛ]━━┫'''
 
 proCmd = '''
 ┣━━━━ Protection
-┣ Kick/Invite [ Mention ]
-┣ Protect [ Max/None ]
-┣ Strictmode [ On/Off ]
+┣ Kick 
+┣ Protect [max/off]
+┣ Strictmode [on/off]
 ┣ Protectlist
 ┣ Checkbot
 ┣ Purge
-┣ 𐀀 [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]'''
+┣━━[xɪᴀs sᴇʟғʙᴏᴛ]━━┫'''
 
 groupCmd = '''
 ┣━━━━ Group
@@ -117,59 +116,61 @@ groupCmd = '''
 ┣ Mention/Tagall
 ┣ Memberlist/Pendinglist
 ┣ Openqr/Closeqr
-┣ 𐀀 [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]'''
+┣━━[xɪᴀs sᴇʟғʙᴏᴛ]━━┫'''
 
 accessCmd = '''
 ┣━━━━ Access
 ┣ Blacklist/Banlist
 ┣ Clearban
-┣ Abort/Eject
 ┣ Squad List
-┣ View Bots/Access 
-┣ Add/Del Owner [ Mention ]
-┣ Add/Del Admin [ Mention ]
-┣ Add/Del Staff [ Mention ]
-┣ Add/Del Squad [ Mention ]
-┣ Add/Del Ban [ Mention ]
-┣ Owner:Recruit/Expel
-┣ Admin:Recruit/Expel
-┣ Staff:Recruit/Expel
+┣ View Bots
+┣ Add/Del Owner [Mention]
+┣ Add/Del Admin [Mention]
+┣ Add/Del Staff [Mention]
+┣ Add/Del Squad [Mention]
+┣ Add/Del Ban [Mention]
+┣ Owner:Add/Del
+┣ Admin:Add/Del
+┣ Staff:Add/Del
 ┣ Squad:Add/Del
 ┣ Ban:Add/Del
-┣ 𐀀 [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]'''
+┣━━[xɪᴀs sᴇʟғʙᴏᴛ]━━┫'''
 
 optCmd ='''
 ┣━━━━ Option
 ┣ Allowliff
 ┣ Creator
-┣ Respon/Ping
-┣ Speed/Debug
-┣ Me/About
-┣ Mid/Mid [ Mention ]
-┣ Contact [ Mention ]
-┣ 𐀀 [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]'''
+┣ Ping
+┣ Speed
+┣ Me
+┣ About
+┣ Mid [Mention]
+┣ Contact [Mention]
+┣━━[xɪᴀs sᴇʟғʙᴏᴛ]━━┫'''
 
 setCmd = '''
 ┣━━━━ Settings
 ┣ Changepict:1-3/All
 ┣ Changebio:1-3/All [ Bio ]
 ┣ Changename:1-3/All [ Name ]
-┣ 𐀀 [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]'''
+┣━━[xɪᴀs sᴇʟғʙᴏᴛ]━━┫'''
 
-aboutCmd ='''┏━━━━━━━━━━━┓ ▕   [x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]
-┃▏╰━╮┏┈┓╭━╯▕┃ ▕  Protect Bot
-┃▏═━┈┫𐀀┣┈━═▕┃ ▕  v5.4.4
-┃▏╭━╯┗┈┛╰━╮▕┃ ▕
-┗━━━━━━━━━━━┛ ▕  '''
+aboutCmd ='''
+┣━━━━ About
+┣ Selfbot 
+┣ v5.4.4
+┣ Python
+┣━━[xɪᴀs sᴇʟғʙᴏᴛ]━━┫'''
 
-dreX53 = '''██████╗░██████╗░███████╗██╗
-██╔══██╗██╔══██╗██╔════╝██║
-██║░░██║██████╔╝█████╗░░██║
-██║░░██║██╔══██╗██╔══╝░░╚═╝
-██████╔╝██║░░██║███████╗██╗
-╚═════╝░╚═╝░░╚═╝╚══════╝╚═╝'''
+dreX53 = '''
+██╗░░██╗██╗░█████╗░░██████╗
+╚██╗██╔╝██║██╔══██╗██╔════╝
+░╚███╔╝░██║███████║╚█████╗░
+░██╔██╗░██║██╔══██║░╚═══██╗
+██╔╝╚██╗██║██║░░██║██████╔╝
+╚═╝░░╚═╝╚═╝╚═╝░░╚═╝╚═════╝░'''
 
-#[x!as 𝗌𝖾𝗅𝖿𝖻𝗈𝗍]. _______________________________________________________
+#┣━━[xɪᴀs sᴇʟғʙᴏᴛ]━━┫ _______________________________________________________
 
 for hlth in Botslist:
     for xdrex in Bots:
@@ -210,7 +211,7 @@ def runtime(secs):
         text = text[1:]
     return text
 
-# 𐀀 HΞLLTΞRHΞΛD ᴄᴏʀᴘ. _______________________________________________________
+# ┣━━[xɪᴀs sᴇʟғʙᴏᴛ]━━┫''' _______________________________________________________
 
 def logError(text):
     a001.log("[ ERROR ] {}".format(str(text)))
@@ -1602,7 +1603,7 @@ async def mobanzu(op):
                                     b = b + 1
                                     end = '\n'
                                     mb += '┣ ' + str(b) + ". " +a001.getGroup(ls).name + "\n"
-                                a001.sendReplyMessage(reply, receiver, "┏━ 𐀀 HΞLLTΞRHΞΛD ᴄᴏʀᴘ.\n┣━━━━ List Protect\n┣━━━━ Protect Max\n"+ma+"┣━━━━ Strict Mode\n"+mb+"┗━ Total [ %s ] Protection" %(str(len(promax)+len(strictmode))))
+                                a001.sendReplyMessage(reply, receiver, "┣━━[xɪᴀs sᴇʟғʙᴏᴛ]━━┫'''\n┣━━━━ List Protect\n┣━━━━ Protect Max\n"+ma+"┣━━━━ Strict Mode\n"+mb+"┗━ Total [ %s ] Protection" %(str(len(promax)+len(strictmode))))
                         elif hlth == "purge":
                             if sender in creator or sender in owner:
                                 group = a001.getGroup(receiver)
