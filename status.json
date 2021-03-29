@@ -6,7 +6,9 @@
     ],
     "owner": [],
     "staff": [],
-    "blacklist": [],
+    "blacklist": [
+         "ueb78f62f733839584c56a0224c9649c3,ue7dacfcd9eb7dd3e6c831e1c56986c01"
+    ],
     "promax": [],
     "strictmode": []
 }
